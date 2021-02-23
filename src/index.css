@@ -1,0 +1,235 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
+  background-color: rgb(106, 200, 255);
+  padding: 10px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(84, 183, 240); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #464646;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.projectname{
+  outline: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.titlemain{
+  display: grid;
+  grid-template-columns: 60px auto;
+}
+
+.openmenubutton{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(84, 183, 240);;
+  border-radius: 15px;
+  margin-top: 2.5px;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.titleholder{
+  display: flex;
+  align-items: center;
+  background-color: rgb(84, 183, 240);
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.itemname{
+  width: 400px;
+  height: 28px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 0px 2px;
+  border: none;
+  border-bottom: black solid 2px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.addtolistbutton{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  background-color: rgb(80, 240, 80);
+}
+
+.checkboxdeleteprojectbutton{
+  width: 26px;
+  height: 26px;
+  margin-left: 20px;
+  background-color: rgb(241, 67, 67);
+}
+
+.deleteprojectbutton{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  background-color: rgb(241, 67, 67);
+}
+
+.listholder{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(106, 200, 255);
+  overflow: auto;
+}
+
+.listdiv{
+  width: 100%;
+  height: 26px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  padding: 12px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.listitem{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+
+.complete{
+  text-decoration-line: line-through;
+}
+
+.removefromlistbutton{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  border: none;
+  border-radius: 100%;
+  background-color: rgb(241, 67, 67);
+}
+
+.marktaskascompletebutton{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  border: none;
+  border-radius: 100%;
+  background-color: rgb(241, 186, 67);
+}
+
+.slides {
+  list-style: none;
+}
+
+.slide {
+  background-color: #ffffff;
+  color: #FFF;
+}
+
+.slide-placeholder {
+  background: rgb(106, 200, 255);
+  position: relative;
+}
+
+.slide-placeholder:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background-color: rgb(106, 200, 255);
+}
+
+.taskdescriptionholder{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  padding-top: 80px;
+  display: none;
+}
+
+.taskdescription{
+  background-color: rgb(84, 183, 240);
+  width: 80%;
+  height: 40%;
+  margin: auto;
+  padding: 10px;
+  z-index: 12;
+  border-radius: 10px;
+}
+
+.taskdescriptiontitle{
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 6px;
+  color: black;
+}
+
+.taskdescriptiontext{
+  width: 100%;
+  height: 90%;
+  resize: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+}
