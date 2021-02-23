@@ -5,6 +5,8 @@ body {
   padding: 10px;
 }
 
+/*sidenav source: https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
